@@ -1,4 +1,67 @@
+html {
+  min-height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(17, 17, 17, 0.748),
+      rgba(29, 29, 29, 0.433)
+    ),
+    url('../../img/contactformbg.jpg');
+  background-size: cover;
+}
+
 .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 100vh;
-  background: url('../../img/contactformbg.jpg') center center / cover;
+  background-color: white;
+  padding-left: 6rem;
+  width: 70vw;
+}
+
+.top-form-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.form input {
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.form textarea {
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.form .subject {
+  grid-column: span 2;
+}
+.form .subject input {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.form .message {
+  grid-column: span 2;
+}
+
+.form .message textarea {
+  width: 100%;
+}
+
+.form .form-section {
+  display: flex;
+  flex-direction: column;
 }
